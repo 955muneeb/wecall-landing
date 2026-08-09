@@ -44,11 +44,10 @@ export default function Hero() {
             
             <div className="lead-card__profile">
               <div className="lead-card__avatar">
-                {/* You can replace this with an actual image tag later */}
-                <div className="avatar-placeholder">JM</div>
+                <img src="/src/assets/muneeb.jpg" alt="John Miller" className="avatar-image" />
               </div>
               <div className="lead-card__info">
-                <h4>John Miller</h4>
+                <h4>Muneeb ur Rehman</h4>
                 <p>Mortgage Refinance</p>
                 <p>California</p>
               </div>
