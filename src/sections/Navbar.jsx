@@ -18,7 +18,7 @@ export default function Navbar() {
         {/* Center: Main Page Navigation Links */}
         <ul className="navbar__links">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/services">Services</Link></li>
+          {/* <li><Link to="/services">Services</Link></li> */}
           <li><Link to="/how-it-works">How It Works</Link></li>
           <li><Link to="/pricing">Pricing</Link></li>
           <li><Link to="/about">About Us</Link></li>
