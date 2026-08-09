@@ -1,12 +1,11 @@
+// src/pages/Home.jsx
 import React from 'react';
+import Hero from '../sections/Hero';
 
-const Home = () => {
+export default function Home() {
   return (
-    <section className="page-section">
-      <h1>Welcome to WeCall</h1>
-      <p>This is the home page section.</p>
-    </section>
+    <div className="page-home">
+      <Hero />
+    </div>
   );
-};
-
-export default Home;
+}

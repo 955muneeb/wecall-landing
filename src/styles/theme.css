@@ -1,13 +1,41 @@
+/* Custom CSS Properties for easy global styling adjustments */
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #0f172a;
-  --text-color: #1f2937;
-  --bg-color: #f8fafc;
+  /* Brand Colors from Reference Screenshot */
+  --color-navy: #0b1a2d;        /* Deep background / Main headers */
+  --color-teal: #00827b;        /* Brand primary buttons & key highlights */
+  --color-teal-light: #e6f3f2;  /* High-intent badges & backgrounds */
+  --color-gold: #ffb800;        /* Text accents / Strong CTAs */
+  --color-text-gray: #4a5568;   /* Regular paragraph text */
+  --color-bg-light: #f8f9fa;    /* Secondary layout blocks */
+  --color-white: #ffffff;
+
+  /* Layout Constants */
+  --max-width: 1280px;
+  --border-radius: 8px;
+  --transition: all 0.25s ease-in-out;
+}
+
+/* Base Document Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

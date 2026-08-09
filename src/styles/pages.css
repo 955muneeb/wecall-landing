@@ -1,10 +1,296 @@
-.page-section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 0;
+/* --- GLOBAL NAVBAR LAYOUT STYLES --- */
+.navbar-wrapper {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.page-section h1,
-.page-section h2 {
-  margin-bottom: 0.75rem;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand Logo Typography */
+.navbar__brand .navbar__logo {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.5px;
+}
+
+.logo-icon {
+  color: var(--color-teal);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+/* Middle Layout Link Elements */
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.navbar__links a {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.85;
+  transition: var(--transition);
+}
+
+.navbar__links a:hover {
+  opacity: 1;
+  color: var(--color-teal);
+}
+
+/* Right Side Actions Grid Panel */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar__phone {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.9;
+  transition: var(--transition);
+}
+
+.navbar__phone:hover {
+  color: var(--color-teal);
+  opacity: 1;
+}
+
+/* --- this is for hero section for homep age  --- */
+/* =========================================
+   HERO SECTION STYLES
+   ========================================= */
+.hero {
+  padding: 80px 0 100px;
+  /* Very subtle radial gradient matching the screenshot background */
+  background: radial-gradient(circle at top right, #f2fafa 0%, var(--color-white) 40%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* --- Left Content Panel --- */
+.hero__content {
+  flex: 1;
+  max-width: 620px;
+}
+
+.hero__badge {
+  display: inline-block;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-gray);
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  border: 1px solid #edf2f7;
+}
+
+.hero__title {
+  font-size: 56px;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+  color: var(--color-navy);
+}
+
+.hero__highlight {
+  color: var(--color-gold);
+}
+
+.hero__description {
+  font-size: 18px;
+  color: var(--color-text-gray);
+  margin-bottom: 40px;
+  max-width: 540px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.hero__trust {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-navy);
+}
+
+.trust-item .check {
+  color: var(--color-gold);
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+/* --- Right Visual Panel & Mockup Card --- */
+.hero__visual {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* The glowing effect behind the card */
+.hero__visual::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: var(--color-teal);
+  filter: blur(100px);
+  opacity: 0.15;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.lead-card {
+  position: relative;
+  z-index: 1;
+  background: var(--color-white);
+  border-radius: 16px;
+  box-shadow: 0 24px 50px -12px rgba(11, 26, 45, 0.15);
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(0, 130, 123, 0.1);
+}
+
+.lead-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.lead-card__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-gray);
+  letter-spacing: 0.5px;
+}
+
+.lead-card__menu {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--color-text-gray);
+  cursor: pointer;
+}
+
+.lead-card__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.avatar-placeholder {
+  width: 56px;
+  height: 56px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+.lead-card__info h4 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.lead-card__info p {
+  font-size: 14px;
+  color: var(--color-text-gray);
+  margin: 0;
+}
+
+.lead-card__status {
+  margin-bottom: 32px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge--verified {
+  background-color: var(--color-teal-light);
+  color: var(--color-teal);
+}
+
+.lead-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #edf2f7;
+  padding-top: 20px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-text-gray);
+}
+
+.meta-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.badge--delivered {
+  background-color: #e6ffed;
+  color: #008a2e;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.meta-time {
+  font-size: 12px;
+  color: var(--color-text-gray);
 }

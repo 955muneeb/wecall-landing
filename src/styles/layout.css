@@ -1,10 +1,65 @@
-.app-shell {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Container Wrapper for consistent grid alignment */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
 }
 
-.main-content {
-  flex: 1;
-  padding: 2rem;
+/* Standard Flex Framework for section layout sections */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Reusable BEM Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: var(--border-radius);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn--primary {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+}
+
+.btn--primary:hover {
+  background-color: #006b65;
+}
+
+.btn--accent {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+.btn--accent:hover {
+  opacity: 0.9;
+}
+
+.btn--outline {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.btn--outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn--dark-outline {
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+  background-color: transparent;
+}
+
+.btn--dark-outline:hover {
+  background-color: var(--color-bg-light);
 }
