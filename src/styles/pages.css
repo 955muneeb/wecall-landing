@@ -82,6 +82,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+   
+      /* margin: 20px; */
   gap: 60px;
 }
 
@@ -89,6 +91,7 @@
 .hero__content {
   flex: 1;
   max-width: 620px;
+  /* margin-right: 40px; */
 }
 
 .hero__badge {
@@ -527,4 +530,105 @@
   font-size: 14px;
   color: var(--color-text-gray);
   line-height: 1.5;
+}
+
+
+/* =========================================
+   COMPARISON BOARD STYLES
+   ========================================= */
+.comparison-section {
+  padding: 60px 0 100px;
+  background-color: var(--color-white);
+}
+
+.comparison-card {
+  background-color: var(--color-navy);
+  border-radius: 16px;
+  padding: 64px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.comparison-card__heading-pane {
+  flex: 1;
+}
+
+.text-teal {
+  color: #00A896; /* Bright neon teal variant for dark background */
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.comparison-card__title {
+  color: var(--color-white);
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+.comparison-card__tables-pane {
+  flex: 2;
+  display: flex;
+  gap: 32px;
+}
+
+.comparison-table {
+  flex: 1;
+  padding: 16px;
+}
+
+.table--featured {
+  border: 2px solid #22c55e;
+  border-radius: 16px;
+  background: rgba(34, 197, 94, 0.08);
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.2);
+}
+
+.comparison-table__header {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Featured side tweak */
+.table--featured .comparison-table__header {
+  color: #00A896;
+  font-weight: 700;
+}
+
+.comparison-table__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comparison-table__item {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item--bad {
+  color: rgba(255, 255, 255, 0.7);
+}
+.item--bad .icon {
+  color: #ff6b6b;
+}
+
+.item--good {
+  color: var(--color-white);
+  font-weight: 500;
+}
+.item--good .icon {
+  color: #00A896;
+  font-weight: bold;
 }
