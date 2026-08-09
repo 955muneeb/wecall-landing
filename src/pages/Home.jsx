@@ -5,6 +5,7 @@ import Metrics from '../sections/Metrics';
 import Industries from '../sections/Industries';
 import HowItWorks from '../sections/HowItWorks';
 import Comparison from '../sections/Comparison';
+import Pricing from '../sections/Pricing';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Industries />
       <HowItWorks />
       <Comparison />
+      <Pricing />
     </div>
   );
 }
