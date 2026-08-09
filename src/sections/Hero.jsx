@@ -1,5 +1,6 @@
 // src/sections/Hero.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 
 export default function Hero() {
@@ -22,8 +23,12 @@ export default function Hero() {
           </p>
           
           <div className="hero__actions">
-            <Button variant="primary">Book a Free Demo &rarr;</Button>
-            <Button variant="dark-outline">View Pricing</Button>
+            <Link to="/bookdemo">
+              <Button variant="primary">Book a Free Demo &rarr;</Button>
+            </Link>
+            <Link to="/pricing">
+              <Button variant="dark-outline">View Pricing</Button>
+            </Link>
           </div>
           
           <div className="hero__trust">

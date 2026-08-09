@@ -767,3 +767,395 @@
 .w-full {
   width: 100%;
 }
+
+
+
+/* =========================================
+   CTA BANNER CARD LAYOUT STYLES
+   ========================================= */
+.cta-banner {
+  padding: 60px 0;
+  background-color: var(--color-navy);
+  margin: 150px;
+  border-radius: 16px;
+}
+
+.cta-banner__card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal) 100%);
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--color-white);
+  box-shadow: 0 20px 40px rgba(11, 26, 45, 0.1);
+  
+}
+
+.cta-banner__title {
+  font-size: 34px;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.cta-banner__subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.cta-banner__actions {
+  margin-bottom: 16px;
+}
+
+.cta-banner__disclaimer {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* =========================================
+   CORPORATE DARK FOOTER STYLES
+   ========================================= */
+.footer {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: 80px 0 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.footer__col--brand {
+  max-width: 320px;
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.footer__tagline {
+  font-size: 14px;
+  color: #a0aec0;
+  line-height: 1.6;
+}
+
+.footer__col h4 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  color: var(--color-white);
+}
+
+.footer__col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__col ul a {
+  font-size: 14px;
+  color: #a0aec0;
+  transition: var(--transition);
+}
+
+.footer__col ul a:hover {
+  color: var(--color-teal);
+}
+
+.footer__contact-info li {
+  font-size: 14px;
+  color: #a0aec0;
+}
+
+/* Bottom Legal Strip Layout */
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__legal a {
+  font-size: 13px;
+  color: #a0aec0;
+  transition: var(--transition);
+}
+
+.footer__legal a:hover {
+  color: var(--color-teal);
+}
+
+.footer__copyright {
+  font-size: 13px;
+  color: #718096;
+}
+
+
+/* =========================================
+   BOOK A DEMO PAGE STYLES
+   ========================================= */
+.page-demo {
+  background-color: #f9f7f1; /* Off-white cream background */
+}
+
+/* Typography Utilities */
+.text-gold { color: #d4af37; }
+.font-bold { font-weight: 700; }
+.tracking-wide { letter-spacing: 1px; }
+
+/* --- HERO SECTION --- */
+.demo-hero {
+  background-color: #1a3b2b; /* Deep Forest Green */
+  color: #ffffff;
+  padding: 40px 0 0 0;
+}
+
+.demo-hero__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.demo-hero__main {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.demo-badge {
+  display: inline-block;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.demo-title {
+  font-size: 56px;
+  line-height: 1.1;
+  font-family: 'Playfair Display', serif; /* Optional: for that elegant serif look */
+  margin-bottom: 24px;
+}
+
+.demo-subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+
+/* Hero Stats Bar */
+.demo-stats {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(212, 175, 55, 0.5); /* Gold border */
+  border-bottom: 1px solid rgba(212, 175, 55, 0.5);
+}
+
+.demo-stat {
+  flex: 1;
+  text-align: center;
+  padding: 32px 16px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.demo-stat:last-child { border-right: none; }
+
+.demo-stat__num {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: 'Playfair Display', serif;
+}
+
+.demo-stat__label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.6);
+}
+
+/* --- SPLIT CONTENT GRID --- */
+.demo-content {
+  padding: 60px 0 100px;
+}
+
+.demo-grid {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.demo-left-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.demo-right-col {
+  flex: 1.2;
+}
+
+/* Informational Cards */
+.demo-card {
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.demo-card--light {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.demo-card--dark {
+  background-color: #1a3b2b;
+  color: #ffffff;
+}
+
+.demo-card__title {
+  font-size: 22px;
+  margin-bottom: 24px;
+  font-family: 'Playfair Display', serif;
+}
+
+.demo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.demo-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.demo-list--gold li span {
+  color: #d4af37;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.demo-list--dots li .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #d4af37;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* --- FORM CARD --- */
+.demo-form-card {
+  background-color: #f9f7f1;
+  border: 2px solid #d4af37;
+  border-radius: 16px;
+  padding: 48px;
+}
+
+.demo-form__title {
+  font-size: 32px;
+  color: #1a3b2b;
+  margin-bottom: 8px;
+}
+
+.demo-form__subtitle {
+  font-size: 16px;
+  color: #4a5568;
+  margin-bottom: 40px;
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #1a3b2b;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  background-color: transparent;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #1a3b2b;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  border-color: #d4af37;
+}
+
+.demo-submit-btn {
+  background-color: #1a3b2b;
+  color: #d4af37;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: opacity 0.2s;
+  margin-top: 16px;
+}
+
+.demo-submit-btn:hover {
+  opacity: 0.9;
+}
+
+.demo-form__footer {
+  text-align: center;
+  font-size: 14px;
+  color: #4a5568;
+  margin-top: 8px;
+}

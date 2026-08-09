@@ -6,6 +6,8 @@ import Industries from '../sections/Industries';
 import HowItWorks from '../sections/HowItWorks';
 import Comparison from '../sections/Comparison';
 import Pricing from '../sections/Pricing';
+import CTA from '../sections/CTA';
+import Footer from '../sections/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <HowItWorks />
       <Comparison />
       <Pricing />
+      <CTA />
+      <Footer />
     </div>
   );
 }

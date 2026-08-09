@@ -24,6 +24,7 @@
   border: 2px solid transparent;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn--primary {

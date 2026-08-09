@@ -8,6 +8,9 @@ import Navbar from './sections/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+// import Demo from './pages/Demo';
+import Pricing from './pages/Pricing';
+import BookDemo from './pages/BookDemo';
 
 function App() {
   return (
@@ -21,6 +24,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/bookdemo" element={<BookDemo />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
         </main>
       </div>
