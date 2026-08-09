@@ -4,95 +4,67 @@ import React from 'react';
 export default function BookDemo() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // In the future, this will connect to your backend or CRM
-    alert("Demo request submitted successfully!");
+    alert('Your demo request has been received. A WeCall specialist will contact you shortly.');
   };
 
   return (
     <div className="page-demo">
-      
-      {/* Top Dark Green Hero Section */}
       <section className="demo-hero">
-        <div className="container">
-          
-          <div className="demo-hero__header">
-            <span className="text-gold font-bold">Book a Demo</span>
-            <span className="text-sm tracking-wide">WECALL • LEAD GENERATION EXPERTS</span>
-          </div>
-
-          <div className="demo-hero__main">
-            <span className="demo-badge">FREE DEMO — NO COMMITMENT</span>
+        <div className="container demo-hero__wrap">
+          <div className="demo-hero__content">
+            <span className="demo-badge">FREE STRATEGY SESSION</span>
             <h1 className="demo-title">
-              See <span className="text-gold">WeCall</span> <br /> In Action — Live
+              Book a demo and see how <span className="text-gold">WeCall</span> turns high-intent conversations into real pipeline growth.
             </h1>
             <p className="demo-subtitle">
-              Fill out the form and our team will reach out within 24 hours to schedule your personalized demo session.
+              Meet with our team to review your goals, explore the right outreach approach, and see how our process supports stronger lead quality and reliable delivery.
             </p>
           </div>
 
-          <div className="demo-stats">
-            <div className="demo-stat">
-              <span className="demo-stat__num">8<span className="text-gold">+</span></span>
-              <span className="demo-stat__label">YEARS EXPERTISE</span>
-            </div>
-            <div className="demo-stat">
-              <span className="demo-stat__num text-gold">3</span>
-              <span className="demo-stat__label">OUTREACH CHANNELS</span>
-            </div>
-            <div className="demo-stat">
-              <span className="demo-stat__num text-gold">50</span>
-              <span className="demo-stat__label">STATES COVERED</span>
-            </div>
-            <div className="demo-stat">
-              <span className="demo-stat__num">100<span className="text-gold">%</span></span>
-              <span className="demo-stat__label">TCPA COMPLIANT</span>
+          <div className="demo-hero__panel">
+            <div className="demo-hero__panel-card">
+              <h3>What you can expect</h3>
+              <ul>
+                <li>Live walkthrough of our lead generation process</li>
+                <li>Guidance tailored to your market and offer</li>
+                <li>Clear pricing and campaign planning overview</li>
+              </ul>
             </div>
           </div>
-          
         </div>
       </section>
 
-      {/* Bottom Split Content Section */}
       <section className="demo-content">
         <div className="container demo-grid">
-          
-          {/* Left Column: Trust Markers */}
           <div className="demo-left-col">
-            
             <div className="demo-card demo-card--light">
-              <h3 className="demo-card__title">What You'll Get In The Demo</h3>
-              <ul className="demo-list demo-list--gold">
-                <li><span>✓</span> Live walkthrough of our lead generation engine</li>
-                <li><span>✓</span> Custom strategy based on your industry and goals</li>
-                <li><span>✓</span> Pricing breakdown tailored to your lead volume</li>
-                <li><span>✓</span> Q&A with a senior lead generation specialist</li>
-                <li><span>✓</span> Overview of our TCPA compliance process</li>
-                <li><span>✓</span> Sample leads and conversion notes from real campaigns</li>
-              </ul>
+              <div className="demo-card__icon">01</div>
+              <h3 className="demo-card__title">A better way to qualify and convert</h3>
+              <p className="demo-card__text">
+                We help teams focus on opportunities that are already aligned with their offer, so conversations become more relevant and more productive.
+              </p>
             </div>
 
             <div className="demo-card demo-card--dark">
-              <h3 className="demo-card__title text-gold">Why Businesses Trust Us</h3>
+              <div className="demo-card__icon demo-card__icon--dark">02</div>
+              <h3 className="demo-card__title text-gold">Built for speed, compliance, and consistency</h3>
               <ul className="demo-list demo-list--dots">
-                <li><span className="dot"></span> 100% TCPA compliant outreach</li>
-                <li><span className="dot"></span> Response guaranteed within 24 hours</li>
-                <li><span className="dot"></span> Lead replacement guarantee</li>
-                <li><span className="dot"></span> 8+ years of hands-on field expertise</li>
-                <li><span className="dot"></span> Your info is never shared or sold</li>
-                <li><span className="dot"></span> Cancel or pause anytime</li>
+                <li><span className="dot"></span> Verified lead context and high-intent targeting</li>
+                <li><span className="dot"></span> Fast response times with predictable lead flow</li>
+                <li><span className="dot"></span> A compliant process designed for long-term growth</li>
               </ul>
             </div>
-
           </div>
 
-          {/* Right Column: The Form */}
           <div className="demo-right-col">
             <div className="demo-form-card">
-              <h2 className="demo-form__title">Request Your <br/> Free Demo</h2>
-              <p className="demo-form__subtitle">Takes less than 2 minutes. We'll do the rest.</p>
+              <div className="demo-form__top">
+                <span className="demo-form__pill">Request your session</span>
+                <h2 className="demo-form__title">Let’s build a smarter outreach plan.</h2>
+              </div>
+              <p className="demo-form__subtitle">Share a few details and a WeCall specialist will reach out with a tailored consultation.</p>
 
               <form className="custom-form" onSubmit={handleFormSubmit}>
-                
                 <div className="form-row">
                   <div className="form-group">
                     <label>FIRST NAME *</label>
@@ -141,23 +113,20 @@ export default function BookDemo() {
                 </div>
 
                 <div className="form-group">
-                  <label>ANYTHING ELSE? (OPTIONAL)</label>
-                  <textarea placeholder="Tell us about your goals or current challenges..." rows="4"></textarea>
+                  <label>HOW CAN WE HELP? (OPTIONAL)</label>
+                  <textarea placeholder="Tell us about your goals, current challenges, or ideal lead volume..." rows="4"></textarea>
                 </div>
 
                 <button type="submit" className="demo-submit-btn">BOOK MY FREE DEMO</button>
-                
-                <p className="demo-form__footer">
-                  No commitment required · We'll contact you within 24 hours
-                </p>
 
+                <p className="demo-form__footer">
+                  No commitment required · We will contact you within one business day
+                </p>
               </form>
             </div>
           </div>
-
         </div>
       </section>
-      
     </div>
   );
 }
